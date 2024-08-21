@@ -1,4 +1,4 @@
-class Centimeters {
+class Assignment {
     public static void main(String args[]) {
         // 25mins
         int cm = 31300;
