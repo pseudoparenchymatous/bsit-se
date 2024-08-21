@@ -21,5 +21,16 @@ class Centimeters {
         // System.out.printf("\n %d yards", yd);
         // System.out.printf(" %d feet", ft);
         // System.out.printf(" %d inches", in);
+
+        // 3mins
+        // int cm = 313;
+        // double yd = cm / 2.54 / 36;
+        // double ft = cm / 2.54 / 12 % 3;
+        // double in = cm / 2.54 / 12 / 3 % 254;
+        // System.out.printf("Enter length in centimeters: %d", cm);
+        // System.out.printf("\n %.0f yards", yd);
+        // System.out.printf(" %.0f feet", ft);
+        // System.out.printf(" %.0f inches", in);
     }
 }
+
