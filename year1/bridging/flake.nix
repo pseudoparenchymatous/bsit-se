@@ -20,11 +20,10 @@
       ];
 
       shellHook = ''
-        exec fish
+       echo "Blud is programming in Java 💀💀"
       '';
 
       # Environment variables
-      fish_greeting = "Blud is programming in Java 💀💀";
     };
   };
 }
