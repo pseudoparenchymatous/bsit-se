@@ -15,18 +15,14 @@ public class MagicSquare {
             if (square[x][y] == 0) {
                 square[x][y] = i;
             } else {
-                x = x + 2;
-                y--;
-                if (x >= size) { x = x - size; }
-                if (y < 0) { y = size - 1; }
+                x = (x + 2) % size;
+                y = ((y - 1) % size + size) % size;
 
                 square[x][y] = i;
             }
 
-            x--;
-            y++;
-            if (x < 0) { x = size - 1; }
-            if (y == size) { y = 0; }
+            x = ((x - 1) % size + size) % size;
+            y = (y + 1) % size;
         }
 
         // Print square
