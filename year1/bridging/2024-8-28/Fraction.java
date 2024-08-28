@@ -32,7 +32,7 @@ public class Fraction {
         return result;
     }
 
-    public void simplify() {
+    private void simplify() {
         int smaller;
         if (numerator > denominator) {
             smaller = denominator;
