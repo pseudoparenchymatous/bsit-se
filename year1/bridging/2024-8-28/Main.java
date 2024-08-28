@@ -16,8 +16,8 @@ public class Main {
         System.out.print("Enter second denominator: ");
         f2.setDenominator(input.nextInt());
 
-        Fraction f3 = f1.add(f2);
+        Fraction sum = f1.add(f2);
 
-        System.out.printf("%s + %s = %s\n", f1, f2, f3);
+        System.out.printf("%s + %s = %s\n", f1, f2, sum);
     }
 }
