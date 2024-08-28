@@ -67,16 +67,21 @@ public class Fraction {
     }
 
     private void simplify() {
+        int absoluteNumerator = this.numerator;
+        if (numerator < 0) {
+            absoluteNumerator = -numerator;
+        }
+
         int smaller;
-        if (numerator > denominator) {
+        if (absoluteNumerator > denominator) {
             smaller = denominator;
         } else {
-            smaller = numerator;
+            smaller = absoluteNumerator;
         }
 
         int gcf = 1;
         for (int i = 2; i <= smaller; i++) {
-            int remainder1 = numerator % i;
+            int remainder1 = absoluteNumerator % i;
             int remainder2 = denominator % i;
             if (remainder1 + remainder2 == 0) {
                 gcf = i;
