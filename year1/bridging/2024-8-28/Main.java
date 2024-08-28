@@ -17,7 +17,9 @@ public class Main {
         f2.setDenominator(input.nextInt());
 
         Fraction sum = f1.add(f2);
+        Fraction difference = f1.subtract(f2);
 
         System.out.printf("%s + %s = %s\n", f1, f2, sum);
+        System.out.printf("%s - %s = %s\n", f1, f2, difference);
     }
 }

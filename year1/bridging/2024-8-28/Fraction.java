@@ -32,6 +32,20 @@ public class Fraction {
         return result;
     }
 
+    public Fraction subtract(Fraction f2) {
+        Fraction result = new Fraction();
+
+        int commonMultiple = denominator * f2.getDenominator();
+        int numerator1 = commonMultiple / denominator * numerator;
+        int numerator2 = commonMultiple / f2.getDenominator() * f2.getNumerator();
+
+        result.setNumerator(numerator1 - numerator2);
+        result.setDenominator(commonMultiple);
+        result.simplify();
+
+        return result;
+    }
+
     private void simplify() {
         int smaller;
         if (numerator > denominator) {
