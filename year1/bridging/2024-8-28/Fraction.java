@@ -46,6 +46,16 @@ public class Fraction {
         return result;
     }
 
+    public Fraction multiply(Fraction f2) {
+        Fraction result = new Fraction();
+
+        result.setNumerator(numerator * f2.getNumerator());
+        result.setDenominator(denominator * f2.getDenominator());
+        result.simplify();
+
+        return result;
+    }
+
     private void simplify() {
         int smaller;
         if (numerator > denominator) {

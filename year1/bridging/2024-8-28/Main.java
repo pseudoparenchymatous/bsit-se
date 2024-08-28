@@ -18,8 +18,10 @@ public class Main {
 
         Fraction sum = f1.add(f2);
         Fraction difference = f1.subtract(f2);
+        Fraction product = f1.multiply(f2);
 
         System.out.printf("%s + %s = %s\n", f1, f2, sum);
         System.out.printf("%s - %s = %s\n", f1, f2, difference);
+        System.out.printf("%s * %s = %s\n", f1, f2, product);
     }
 }
