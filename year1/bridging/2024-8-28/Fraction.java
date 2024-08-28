@@ -44,7 +44,7 @@ public class Fraction {
         for (int i = 2; i <= smaller; i++) {
             int remainder1 = numerator % i;
             int remainder2 = denominator % i;
-            if (remainder1 == 0 && remainder2 == 0) {
+            if (remainder1 + remainder2 == 0) {
                 gcf = i;
             }
         }
